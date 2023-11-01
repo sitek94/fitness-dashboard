@@ -8,6 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react'
+import faviconUrl from './assets/favicon.svg'
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref
@@ -16,7 +17,7 @@ export const links: LinksFunction = () => [
         {
           rel: 'icon',
           type: 'image/svg+xml',
-          href: '/favicon.svg',
+          href: faviconUrl,
         },
       ]),
 ]
