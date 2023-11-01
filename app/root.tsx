@@ -9,6 +9,7 @@ import {
 	ScrollRestoration,
 } from '@remix-run/react'
 import faviconUrl from './assets/favicon.svg'
+import fontStylesheetUrl from './styles/font.css'
 
 export const links: LinksFunction = () => [
 	...(cssBundleHref
@@ -19,6 +20,7 @@ export const links: LinksFunction = () => [
 					type: 'image/svg+xml',
 					href: faviconUrl,
 				},
+				{ rel: 'stylesheet', href: fontStylesheetUrl },
 		  ]),
 ]
 
